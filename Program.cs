@@ -16,7 +16,8 @@ try
     foreach (Battery battery in BatteryList ) 
     {
         if ( battery.type == null) { throw new ArgumentNullException(nameof(battery.type)); };
-        if ( (battery.type != "AA") && (  battery.type != "AAA")){ throw new ArgumentException(nameof(battery.type)); } 
+        if ( (battery.type != "AA") && (  battery.type != "AAA")){ throw new ArgumentException(nameof(battery.type)); };
+        if ( battery.сapacity <= 0) { throw new ArgumentOutOfRangeException(nameof(battery.сapacity)); };
     }
 
     BatteryList.SortBatteries();
