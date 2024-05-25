@@ -15,7 +15,13 @@ namespace Task4
                 from batteries in this
                 orderby batteries.сapacity
                 select batteries;
+
+            Console.WriteLine("Батарейки по возрастанию:");
+            foreach (var battery in sortingbatteries) 
+            {
+                Console.WriteLine(battery);
+            }
         }
-        C
+        
     }
 }
