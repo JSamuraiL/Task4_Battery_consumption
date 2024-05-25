@@ -16,5 +16,6 @@ namespace Task4
                 orderby batteries.сapacity
                 select batteries;
         }
+        C
     }
 }
