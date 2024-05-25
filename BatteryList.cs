@@ -12,9 +12,10 @@ namespace Task4
         public void SortBatteries() 
         {
             var sortingbatteries = 
-                from batteries in this
-                orderby batteries.capacity
-                select batteries;
+                from battery in this
+                where battery.type == "AA"
+                orderby battery.capacity
+                select battery;
 
             Console.WriteLine("Батарейки по возрастанию ёмкости:");
             foreach (var battery in sortingbatteries) 
