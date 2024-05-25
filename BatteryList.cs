@@ -13,13 +13,13 @@ namespace Task4
         {
             var sortingbatteries = 
                 from batteries in this
-                orderby batteries.сapacity
+                orderby batteries.capacity
                 select batteries;
 
             Console.WriteLine("Батарейки по возрастанию:");
             foreach (var battery in sortingbatteries) 
             {
-                Console.WriteLine($"Тип батареи: {battery.type}, ёмкость: {battery.сapacity}");
+                Console.WriteLine($"Тип батареи: {battery.type}, ёмкость: {battery.capacity}");
             }
         }
         

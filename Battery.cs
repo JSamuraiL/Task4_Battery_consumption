@@ -9,6 +9,6 @@ namespace Task4
     public class Battery
     {
         public string type { get; set; }
-        public float сapacity { get; set; }
+        public float capacity { get; set; }
     }
 }
