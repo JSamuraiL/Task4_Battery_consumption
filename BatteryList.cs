@@ -13,7 +13,7 @@ namespace Task4
         {
             var sortingbatteries = 
                 from batteries in this
-                orderby batteries.Capacity
+                orderby batteries.сapacity
                 select batteries;
         }
     }
