@@ -16,7 +16,7 @@ namespace Task4
                 orderby batteries.capacity
                 select batteries;
 
-            Console.WriteLine("Батарейки по возрастанию:");
+            Console.WriteLine("Батарейки по возрастанию ёмкости:");
             foreach (var battery in sortingbatteries) 
             {
                 Console.WriteLine($"Тип батареи: {battery.type}, ёмкость: {battery.capacity}");
