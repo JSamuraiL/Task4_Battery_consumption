@@ -12,8 +12,14 @@ try
         new Battery {type = "AA", сapacity = 500},
         new Battery {type = "AAA", сapacity = 400},
     };
-    BatteryList.SortBatteries();
 
+    foreach (Battery battery in BatteryList ) 
+    {
+        if ( battery.type == null) { throw new ArgumentNullException(nameof(battery.type)); };
+        if ( (battery.type != "AA") && (  battery.type != "AAA")){ throw new ArgumentException(nameof(battery.type)); } 
+    }
+
+    BatteryList.SortBatteries();
 }
 
 catch { }
