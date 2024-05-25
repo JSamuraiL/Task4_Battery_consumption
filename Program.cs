@@ -12,6 +12,7 @@ try
         new Battery {type = "AA", сapacity = 500},
         new Battery {type = "AAA", сapacity = 400},
     };
+    BatteryList.SortBatteries();
 
 }
 

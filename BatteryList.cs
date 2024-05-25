@@ -19,7 +19,7 @@ namespace Task4
             Console.WriteLine("Батарейки по возрастанию:");
             foreach (var battery in sortingbatteries) 
             {
-                Console.WriteLine(battery);
+                Console.WriteLine($"Тип батареи: {battery.type}, ёмкость: {battery.сapacity}");
             }
         }
         
